@@ -39,7 +39,7 @@ return `<li class="item"><img src="${url}" alt="${alt}" width="500"></img></li>`
 });
 
 const markup = itemsList.join("");
-gallaryRef.innerHTML = markup;
+gallaryRef.insertAdjacentHTML("beforeend", markup);
 
 gallaryRef.style.cssText = "display: flex; justify-content: center; align-items: center"
 const itemEL = document.querySelectorAll(".item");
